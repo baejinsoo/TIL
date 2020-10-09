@@ -1,0 +1,6 @@
+2020-07-17 16:29:48,764 - DEBUG - logging_file_test.py - 30 Start of Program
+2020-07-17 16:29:48,764 - DEBUG - logging_file_test.py - 31 Hello 디버그 모드
+2020-07-17 16:29:48,764 - INFO - logging_file_test.py - 32 Hello 인포 모드
+2020-07-17 16:29:48,764 - ERROR - logging_file_test.py - 34 Hello error 모드
+2020-07-17 16:29:48,764 - CRITICAL - logging_file_test.py - 35 Hello fatal 모드
+2020-07-17 16:29:48,764 - DEBUG - logging_file_test.py - 36 END of Program
