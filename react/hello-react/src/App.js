@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
+import MyComponent from './MyComponent';
+import Counter from './Counter';
+import Say from './Say';
+import EventPractice from './EventPractice';
 
 function App() {
+  const style = {
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: '60px',
+    fontWeight: 'bold',
+    padding: 30
+  };
+  const name = '리액트';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='react'>{name}</div>
+      <input />
+      //하지만 이런 주석이나
+      /* 이런 주석은 페이지에 나옵니다.*/
+      <MyComponent name="JINSOO" favoriteNumber={1} />
+      <MyComponent favoriteNumber={1}>자식</MyComponent>
+      <Counter />
+      <Say />
+      <EventPractice />
+    </>
   );
 }
 
